@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
+
     <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Tienda Online</h1>
+            <br>
+            <img src="img/logo/Uzay logo.png" alt="">
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
             <header>
-                <h1 class="logo">Tienda</h1>
+                <h1 class="logo">Tienda Online</h1>
+                <br>
+                <img src="img/logo/Uzay logo.png" alt="">
             </header>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los
-                            productos</button>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Abrigos</button>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Camisetas</button>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Pantalones</button>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
                     </li>
                     <li>
-                        <a class="boton-menu boton-carrito" href="carrito.html">
-                            <i class="bi bi-cart-fill"></i>Carrito <span class="numerito">0</span>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
                         </a>
                     </li>
                 </ul>
@@ -41,59 +53,17 @@
             <footer>
                 <p class="texto-footer">© 2023 Gastón Gigena</p>
             </footer>
-
         </aside>
-
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos"></div>
-                <div class="producto">
-                    <img class="producto-imagen" src="https://github.com/carpicoder/e-commerce-desde-cero/blob/main/resultado-final/img/abrigos/01.jpg?raw=true"
-                        alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto.titulo">Abrigo 01</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-
-                </div>
-
-                <div class="producto">
-                    <img class="producto-imagen" src="https://github.com/carpicoder/e-commerce-desde-cero/blob/main/resultado-final/img/abrigos/02.jpg?raw=true"
-                        alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto.titulo">Abrigo 02</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="https://github.com/carpicoder/e-commerce-desde-cero/blob/main/resultado-final/img/abrigos/03.jpg?raw=true"
-                        alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto.titulo">Abrigo 03</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="https://github.com/carpicoder/e-commerce-desde-cero/blob/main/resultado-final/img/abrigos/04.jpg?raw=true"
-                        alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto.titulo">Abrigo 04</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-
-                </div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
             </div>
-
         </main>
     </div>
-
-    <script>src = "./js/main,js"</script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
-
 </html>
