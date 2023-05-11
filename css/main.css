@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #c57315;
+    --clr-main: rgb(145, 20, 20);
     --clr-main-light: #c7b65a;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #080000;
+    
 }
 
 * {
@@ -32,6 +33,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: var(--clr-main);
+    border-radius: 10px;
 }
 
 aside {
@@ -49,6 +51,7 @@ aside {
 .logo {
     font-weight: 100;
     font-size: 1.7rem;
+    
 }
 
 .menu {
@@ -59,16 +62,17 @@ aside {
 
 .boton-menu {
     background-color: transparent;
-    border: 0;
+    border: 10px;
     color: var(--clr-white);
     cursor: pointer;
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     font-weight: 600;
     padding: 1rem;
     font-size: .85rem;
-    width: 100%;
+    width: 200px;
 }
 
 .boton-menu.active {
@@ -140,12 +144,16 @@ main {
 .titulo-principal {
     color: var(--clr-main);
     margin-bottom: 2rem;
+    
 }
 
 .contenedor-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    text-align: center;
+    margin: auto;
+    
 }
 
 .producto-imagen {
@@ -155,7 +163,7 @@ main {
 
 .producto-detalles {
     background-color: var(--clr-main);
-    color: var(--clr-white);
+    color: #ffffff;
     padding: .5rem;
     border-radius: 1rem;
     margin-top: -2rem;
@@ -171,13 +179,13 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: #ffffff;
+    color: brown;
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
+    border: 2px solid #e49898;
     transition: background-color .2s, color .2s;
 }
 
@@ -208,17 +216,17 @@ main {
 
 .carrito-producto {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: center;
     background-color: var(--clr-gray);
     color: var(--clr-main);
-    padding: .5rem;
-    padding-right: 1.5rem;
+    padding: 1rem;
+    padding-right: 1rem;
     border-radius: 1rem;
 }
 
 .carrito-producto-imagen {
-    width: 4rem;
+    width: 5rem;
     border-radius: 1rem;
 }
 
@@ -250,6 +258,7 @@ main {
 
 .carrito-acciones-derecha {
     display: flex;
+    
 }
 
 .carrito-acciones-total {
@@ -262,6 +271,7 @@ main {
     border-bottom-left-radius: 1rem;
     gap: 1rem;
 }
+
 
 .carrito-acciones-comprar {
     border: 0;
@@ -291,7 +301,9 @@ main {
 @media screen and (max-width: 850px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr 1fr;
+        
     }
+   
 }
 
 @media screen and (max-width: 675px) {
@@ -331,11 +343,7 @@ main {
         display: none;
     }
 
-    main {
-        margin: 1rem;
-        margin-top: 0;
-        padding: 2rem;
-    }
+  
 
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
@@ -393,3 +401,288 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(207, 185, 185);
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header{
+    padding:  30px;
+    background-color: rgb(207, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+    
+}
+ header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+h2{
+  color: white;
+}
+a{text-decoration: none;}
+
+
+
+.sobrenosotros section{
+    background-color: rgb(145, 20, 20);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.sobrenosotros img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sobrenosotros section section img{
+    width: 200px;
+    text-align: center;
+    
+    
+  
+}
+
+section div img {
+    
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: groove;
+    border: 5px;
+    box-sizing: border-box;
+    
+    
+}
+
+section div p{
+    display: flex;
+    justify-content:center;
+}
+
+section h2{
+    background-color:  rgb(145, 20, 20);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+form {
+    border: 5px solid rgb(145, 20, 20);
+    color: rgb(145, 20, 20);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 20px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(116, 11, 11);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: rgb(145, 20, 20);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(145, 20, 20);
+    width: 100%;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    border-radius: 10px;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  section section p{
+text-align: justify;
+  }
+
+
+
+.arriba-icon {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    width: 80px;
+    height: auto;
+    opacity: 40%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.arriba-icon:hover {
+    opacity: 100%;
+}
+
+footer div img{
+    
+    border-radius: 10px;
+    width: 100%;
+    
+    
+}
+
+h2{
+  color: white;
+}
+a{text-decoration: none;}
+
+form div button{
+  background-color: rgb(145, 20, 20);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+nav ul li {
+    list-style: none;
+    background-color: rgb(145, 20, 20);
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+
+    align-items: center;
+
+}
+
+nav ul li a{
+  
+  color: aliceblue;
+  text-decoration: none;
+  
+ 
+  
+  
+}
+
+nav ul {
+    display: flex;
+    justify-content:center;
+    
+  }
+
+  .footercarrito{
+    border-radius: 10px;
+    width: 80%;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+   
