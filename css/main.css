@@ -72,7 +72,7 @@ aside {
     font-weight: 600;
     padding: 1rem;
     font-size: .85rem;
-    width: 200px;
+    width: auto;
 }
 
 .boton-menu.active {
@@ -671,6 +671,8 @@ nav ul {
     margin: 20px;
 
   }
+
+  
 
 
   
