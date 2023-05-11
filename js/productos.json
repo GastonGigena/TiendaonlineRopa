@@ -81,7 +81,7 @@
     },
     {
         "id": "mazeta-04",
-        "titulo": "Mazeta Oso perezoso",
+        "titulo": "Mazeta Oso",
         "imagen": "./img/mazetas/mazetaperezoso.jpeg",
         "categoria": {
             "nombre": "Mazetas",
